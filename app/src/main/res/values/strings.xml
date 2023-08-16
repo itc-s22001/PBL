@@ -12,4 +12,12 @@
         <item>サウンド９</item>
         <item>サウンド１０</item>
     </string-array>
+
+    <string name="app_name">アラーム停止画面</string>
+    <string name="alarm_time">アラーム</string>
+    <string name="btn_snooze">スヌーズ</string>
+    <string name="cal_title">計算</string>
+    <string name="cal_answer">答え</string>
+    <string name="btn_answer"></string>
+
 </resources>
