@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">PBL</string>
+    <string name="app_name">&lt;戻る</string>
+    <string-array name="sound_list">
+        <item>サウンド１</item>
+        <item>サウンド２</item>
+        <item>サウンド３</item>
+        <item>サウンド４</item>
+        <item>サウンド５</item>
+        <item>サウンド６</item>
+        <item>サウンド７</item>
+        <item>サウンド８</item>
+        <item>サウンド９</item>
+        <item>サウンド１０</item>
+    </string-array>
+
+    <string name="app_name">アラーム停止画面</string>
+    <string name="alarm_time">アラーム</string>
+    <string name="btn_snooze">スヌーズ</string>
+    <string name="cal_title">計算</string>
+    <string name="cal_answer">答え</string>
+    <string name="btn_answer"></string>
+
 </resources>
