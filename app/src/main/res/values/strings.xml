@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">&lt;戻る</string>
+    <string name="bt_sound">サウンド</string>
     <string-array name="sound_list">
         <item>サウンド１</item>
         <item>サウンド２</item>
@@ -13,7 +14,7 @@
         <item>サウンド１０</item>
     </string-array>
 
-    <string name="app_name">アラーム停止画面</string>
+    <string name="alarm_name">アラーム停止画面</string>
     <string name="alarm_time">アラーム</string>
     <string name="btn_snooze">スヌーズ</string>
     <string name="cal_title">計算</string>
