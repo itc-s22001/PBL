@@ -1,17 +1,18 @@
 package jp.ac.it_college.std.s22001.pbl
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import jp.ac.it_college.std.s22001.pbl.databinding.MenuRowBinding
 
-class MenuListAdapter(private val data: List<Menu>) :
+class MenuListAdapter(private val data: List<Menu>, private val callback: (String) -> Unit) :
     RecyclerView.Adapter<MenuListAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: MenuRowBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int)
-    : ViewHolder = ViewHolder(
+            : ViewHolder = ViewHolder(
         MenuRowBinding.inflate(
             LayoutInflater.from(parent.context), parent, false
         )
@@ -23,7 +24,10 @@ class MenuListAdapter(private val data: List<Menu>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val menu = data[position]
         holder.binding.apply {
-            tvName.text = menu.alarmName
+            tvName.text = menu.name
+            root.setOnClickListener {
+                callback(menu.name)
+            }
         }
     }
 }

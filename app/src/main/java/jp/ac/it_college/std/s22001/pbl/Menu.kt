@@ -1,6 +1,6 @@
 package jp.ac.it_college.std.s22001.pbl
 
-data class Menu (val alarmName: String)
+data class Menu (val name: String)
 
 val menuList = listOf(
     Menu("5:00"),
