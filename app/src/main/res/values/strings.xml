@@ -16,7 +16,7 @@
     <string name="alarm_title">アラーム名</string>
     <string name="decision">決定</string>
     <string name="cancel">キャンセル</string>
-    <string name="btn_back">&lt;戻る</string>
+    <string name="btn_back">&lt;　戻る</string>
     <string name="bt_sound">サウンド</string>
     <string-array name="sound_list">
         <item>サウンド１</item>

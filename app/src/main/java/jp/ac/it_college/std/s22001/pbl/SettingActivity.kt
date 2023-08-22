@@ -1,8 +1,10 @@
 package jp.ac.it_college.std.s22001.pbl
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
@@ -28,11 +30,15 @@ class SettingActivity : AppCompatActivity() {
             binding.textView.setText("$year 年 $_monthOfYear 月 $dayOfMonth 日" + week_name[_weekInt])
         }
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.i("SoundScreen", "Sub onCreate() called.")
         super.onCreate(savedInstanceState)
         binding = ActivitySettingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val listener = HelloListener()
+
+        //サウンドポタン遷移
+        binding.button.setOnClickListener(::onNextClick)
 
         binding.checkBox.setOnClickListener(listener)
 
@@ -57,6 +63,40 @@ class SettingActivity : AppCompatActivity() {
         }
     }
 
+    override fun onStart() {
+        Log.i("SoundScreen", "Sub onStart() called.")
+        super.onStart()
+    }
+
+    override fun onRestart() {
+        Log.i("SoundScreen", "Sub onRestart() called.")
+        super.onRestart()
+    }
+
+    override fun onResume() {
+        Log.i("SoundScreen", "Sub onResume() called.")
+        super.onResume()
+    }
+
+    override fun onPause() {
+        Log.i("SoundScreen", "Sub onPause() called.")
+        super.onPause()
+    }
+
+    override fun onStop() {
+        Log.i("SoundScreen", "Sub onStop() called.")
+        super.onStop()
+    }
+
+    override fun onDestroy() {
+        Log.i("SoundScreen", "Sub onDestroy() called.")
+        super.onDestroy()
+    }
+
+    private fun onNextClick(view: View) {
+        val intent = Intent(this, SoundScreen::class.java)
+        startActivity(intent)
+    }
     private inner class HelloListener : View.OnClickListener {
         override fun onClick(v: View?) {
             val input = findViewById<EditText>(R.id.etName)
@@ -84,4 +124,5 @@ class SettingActivity : AppCompatActivity() {
 //            return dialog
 //        }
 //    }
+
 }
