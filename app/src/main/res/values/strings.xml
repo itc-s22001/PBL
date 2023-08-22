@@ -1,4 +1,5 @@
 <resources>
+    <string name="alarm_name">アラーム</string>
     <string name="app_name">pbl</string>
     <string name="sunday">日</string>
     <string name="monday">月</string>
