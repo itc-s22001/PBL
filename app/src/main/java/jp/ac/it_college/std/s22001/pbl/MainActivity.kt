@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
-import android.view.View
 import android.widget.Button
 import android.widget.PopupMenu
 import android.widget.Toast
@@ -16,7 +15,7 @@ import com.google.android.material.switchmaterial.SwitchMaterial
 import jp.ac.it_college.std.s22001.pbl.databinding.ActivityMainBinding
 
 import android.view.View
-import androidx.fragment.app.DialogFragment\
+import androidx.fragment.app.DialogFragment
 
 class MainActivity: AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -47,7 +46,7 @@ class MainActivity: AppCompatActivity() {
         //BtnNext ボタン押したらSettingに飛ぶ
 
         nextButton.setOnClickListener {
-            val intent = Intent(this, AaaActivity::class.java)
+            val intent = Intent(this, SettingActivity::class.java)
 
             startActivity(intent)
         }
