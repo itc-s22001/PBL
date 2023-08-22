@@ -9,14 +9,6 @@ import androidx.fragment.app.DialogFragment
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-//        setContentView(R.layout.activity_setting)
-
-        val intentSetting = Intent(
-            this@MainActivity,
-            SettingActivity::class.java
-        )
-        startActivity(intentSetting)
     }
 //    fun onClickEvent(view: View) {
 //        val dialog: DialogFragment = showDialogFragment()
