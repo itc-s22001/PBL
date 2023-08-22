@@ -15,6 +15,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.switchmaterial.SwitchMaterial
 import jp.ac.it_college.std.s22001.pbl.databinding.ActivityMainBinding
 
+import android.view.View
+import androidx.fragment.app.DialogFragment\
+
 class MainActivity: AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,6 +52,4 @@ class MainActivity: AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-
 }
