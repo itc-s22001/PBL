@@ -1,4 +1,21 @@
 <resources>
+    <string name="alarm_name">アラーム</string>
+    <string name="app_name">pbl</string>
+    <string name="sunday">日</string>
+    <string name="monday">月</string>
+    <string name="tuesday">火</string>
+    <string name="wednesday">水</string>
+    <string name="thursday">木</string>
+    <string name="friday">金</string>
+    <string name="saturday">土</string>
+    <string name="rd_hour">1時間</string>
+    <string name="rd_half">30分</string>
+    <string name="sound">サウンド</string>
+    <string name="snooze">スヌーズ</string>
+    <string name="weather_alarm">雨のアラーム</string>
+    <string name="alarm_title">アラーム名</string>
+    <string name="decision">決定</string>
+    <string name="cancel">キャンセル</string>
     <string name="app_name">&lt;戻る</string>
     <string-array name="sound_list">
         <item>サウンド１</item>
@@ -12,12 +29,10 @@
         <item>サウンド９</item>
         <item>サウンド１０</item>
     </string-array>
-
     <string name="app_name">アラーム停止画面</string>
     <string name="alarm_time">アラーム</string>
     <string name="btn_snooze">スヌーズ</string>
     <string name="cal_title">計算</string>
     <string name="cal_answer">答え</string>
     <string name="btn_answer"></string>
-
 </resources>
